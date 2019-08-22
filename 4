@@ -6,23 +6,28 @@
 //Exemplo de repositório: Github.
 
 //(Deixe público)
-var  vetor = [5,4,3,8,9,10]
- var ordena = []
-
-
-var aux = "";
+<html>
+<head>
+<script>
+var  vetor = [5,4,3,8,9,10];
+ var ordena = [];
+var aux = 0;
 var aux2 = ""; for( var x=0; x < vetor.length; x++ )
   {
-    for( var y=(x+1); y < vetor.length; y++ ) 
+    for( var y=0; y < vetor.length; y++ ) 
     {
     
-      if ( vetor[x] > vetor[y] )
+      if ( vetor[x] < vetor[y] )
       {
          aux = vetor[x];
-         alert(aux);
-		 ordena[x] = vetor[y];
-         ordena[y] = aux;
+        // alert(aux);
+		 vetor[x] = vetor[y];
+         vetor[y] = aux;
 		
       }
     }
   } 
+for( var k=0; k < vetor.length; k++ ){alert(vetor[k])}
+</head>
+</script>
+</html>
